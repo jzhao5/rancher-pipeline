@@ -1,1 +1,9 @@
-notification: {}
+stages:
+  - name: Build something
+    steps:
+    - runScriptConfig:
+        image: busybox
+        shellScript: echo ${FIRST_KEY} && echo ${SECOND_KEY}
+      env:
+        FIRST_KEY: VALUE
+        SECOND_KEY: VALUE2
