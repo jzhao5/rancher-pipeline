@@ -6,6 +6,7 @@ stages:
       buildContext: .
       tag: repo/app:v1
       pushRemote: true
-      registry: hub.docker.com
+      registry: 127.0.0.1:34005
     env:
       PLUGIN_INSECURE: "true"
+notification: {}
