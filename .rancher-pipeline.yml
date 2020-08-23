@@ -1,6 +1,13 @@
 stages:
-  - name: Build something
-    steps:
-    - runScriptConfig:
-        image: busybox
-        shellScript: ping -c 10 www.google.com
+- name: Build something
+  steps:
+  - runScriptConfig:
+      image: busybox
+      shellScript: ping -c 10 www.google.com
+  - publishImageConfig:
+      dockerfilePath: ./Dockerfile
+      buildContext: .
+      tag: busybox
+      pushRemote: true
+      registry: 127.0.0.1:34005
+notification: {}
