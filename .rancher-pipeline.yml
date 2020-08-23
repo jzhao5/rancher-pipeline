@@ -20,3 +20,4 @@ stages:
       tag: rancher/rancher:v2.0.0
       pushRemote: true
       registry: index.docker.io
+notification: {}
