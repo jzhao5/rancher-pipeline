@@ -3,4 +3,4 @@ stages:
     steps:
     - runScriptConfig:
         image: busybox
-        shellScript: ping www.google.com
+        shellScript: ping -c 10 www.google.com
