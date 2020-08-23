@@ -1,10 +1,1 @@
-stages:
-- name: Build something
-  steps:
-  - publishImageConfig:
-      dockerfilePath: ./Dockerfile
-      buildContext: .
-      tag: busybox:latest
-      pushRemote: true
-      registry: 127.0.0.1:34005
 notification: {}
